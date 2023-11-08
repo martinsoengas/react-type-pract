@@ -16,12 +16,10 @@ export default function CourseGoalList({
         <li key={goal.id}>
           <CourseGoal
             id={goal.id}
-            title="TITLE"
-            description="DESCRIPTION"
+            title={goal.title}
+            description={goal.description}
             onDelete={onDeleteGoal}
-          >
-            <p>Learn it from the ground up</p>
-          </CourseGoal>
+          ></CourseGoal>
         </li>
       ))}
     </ul>
